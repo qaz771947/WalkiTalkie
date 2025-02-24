@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="466dp" />
+
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_dialog_alert"/> <!-- 使用實際圖片資源 -->
+        android:contentDescription="@string/avatar"
+        tools:src="@tools:sample/avatars" <!-- 保留這個屬性供預覽使用 -->
+        android:scaleType="centerCrop" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

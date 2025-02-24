@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <!-- RecyclerView 用於顯示訊息列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receive_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+        tools:listitem="@layout/message_item" />
+
+    <EditText
+        android:id="@+id/msg_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/record_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_radio" />
+
+</LinearLayout>
